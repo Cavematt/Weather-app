@@ -22,7 +22,7 @@ function Home() {
         <div className="home">
             <h1>Search for weather</h1>
             <input type="text" placeholder="city name..." onChange={(event) => {setCitySearched(event.target.value);}}></input>    
-            <button onClick={() => getWeather()}> Search</button>
+            <button onClick={() => getWeather()}> Search</button> 
             <div className="weather">
                 {data && (
                 <>
@@ -33,6 +33,7 @@ function Home() {
                 </>
                 )}
             </div>
+            <a href="https://github.com/Cavematt/Weather-app"> Code for this app</a>
         </div>
     )
 }
